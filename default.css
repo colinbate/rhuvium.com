@@ -1,0 +1,116 @@
+
+body {
+	font-family: "Arial", "Verdana", "Trebuchet MS", "Helvetica", sans-serif;
+	background-color: #eee;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	min-height: calc(100vh - 1rem);
+	margin: 0;
+	padding: 1rem 0 0 0;
+}
+
+a {
+	text-decoration: none;
+	color: #069;
+}
+
+#logo {
+	background: #232323;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+#logo img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+#size {
+	max-width: 44rem;
+	border-radius: max(0px, min(0.5rem, calc((100vw - 0.25rem - 100%) * 9999)));
+	background-color: #fff;
+	box-shadow: 0 0 1rem #444;
+	overflow: hidden;
+}
+
+#frame {
+	padding: 1.5rem 1.5rem 3rem 1.5rem;
+	background-image: url(/i/corner-dots.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+#frame h1 {
+	position: relative;
+	top: 0px;
+	left: -45px;
+	background-color: #444;
+	color: #fff;
+	text-align: center;
+	padding: 3px;
+	width: 735px;
+	font-weight: normal;
+	font-size: 30pt;
+	font-family: "Futura", "Arial", "Verdana", "Trebuchet MS", "Helvetica", sans-serif;
+}
+
+#frame h2 {
+	border-bottom: 1px solid #888;
+	margin-right: 14%;
+	padding-left: 2%;
+}
+
+#frame p {
+	margin: 0 18% 1.5rem 9%;
+}
+
+.notice {
+	color: #445;
+	font-style: italic;
+}
+
+div#clientform {
+	margin-left: 50px;
+	padding: 6px;
+	border: 1px solid #f00;
+	background-color: #fee;
+	float: left;
+}
+
+div#clientform form {
+	margin: 0;
+	padding: 0;
+}
+
+form label {
+	display: block;
+	color: #444;
+	margin-top: 7px;
+	font-size: 8pt;
+	padding-left: 5px;
+}
+
+form input[type=text] {
+	border: 1px solid #444;
+	background-color: #ccc;
+}
+
+form input[type=password] {
+	border: 1px solid #444;
+	background-color: #ccc;
+}
+
+form input[type=text]:focus {
+	background-color: #fff;
+}
+
+form input[type=password]:focus {
+	background-color: #fff;
+}
+
+div.spacer {
+	clear: both;
+}
