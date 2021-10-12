@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rhuvium information services // Settle</title>
+<link type="text/css" rel="stylesheet" href="/t/default.css" />
+<link rel="icon" type="image/png" href="/favicon.png">
+<script language="javascript" type="text/javascript" src="/projects/settle/controls.js"></script>
+
+</head>
+<body>
+<div id="region">
+<div id="logo">
+<img src="/i/rhuvium-logo.gif" alt="rhuvium information services" />
+</div>
+<main>
+	<h1>Settle <span class="beta">Beta</span></h1>
+
+	<p>
+		This is a long overdue rewrite of my long lost &ldquo;Who owes whom what?&rdquo; program that I wrote in Visual Basic 5 back in the early days
+		of my university career. Back before I started writing all my software for the web. :)
+	</p>
+
+	<p>
+		Bear in mind with this version that the interface is still a bit rough, but I will clean that up when I get some time.
+		I hope that it is useful for someone some time.
+	</p>
+
+	<form action="actors" method="post">
+	<label>Split costs <span class="note">(Costs split by all actors)</span></label>
+	<div id="splitcosts" class="exlist">
+	<input type="text" name="common[]" value="" size="10">
+	</div>
+	<input type="button" name="addsplit" value="Add cost" onclick="appendTo('splitcosts','newsplit');return true;">
+	<br><br>
+	<label>Actors <span class="note">(Those people splitting the costs)</span></label>
+	<div id="actors" class="exlist">
+	<input type="text" name="actor[]" value="" size="20">
+	</div>
+	<input type="button" name="addactor" value="Add actor" onclick="appendTo('actors','newactor');return true;">
+	<br><br>
+	<input type="submit" name="submit" value="Continue &rarr;" id="submit">
+
+	</form>
+
+	<h3>Notes</h3>
+	<p>
+	View <a href="/projects/settle/changes.html">change history</a>.
+	</p>
+
+	<div id="newsplit" style="display: none;">
+		<input type="text" name="common[]" value="" size="10"> <input type="button" name="rem" value="-" onclick="removeMe(this,'splitcosts');return true;">
+	</div>
+
+	<div id="newactor" style="display: none;">
+		<input type="text" name="actor[]" value="" size="20"> <input type="button" name="rem" value="-" onclick="removeMe(this,'actors');return true;">
+	</div>
+
+</main>
+<div class="footer">
+<strong><a href="/">rhuvium.com</a></strong> | a fusion of software and design
+</div>
+</div>
+</body>
+</html>

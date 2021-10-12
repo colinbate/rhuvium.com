@@ -1,0 +1,117 @@
+
+
+body {
+	background: #305a00 url(/i/subwaybg.gif) top left repeat-y;
+	display: block;
+	
+}
+
+div#region {
+	left: 85px;
+	width: 650px;
+	border-radius: 0;
+	box-shadow: none;
+	position: relative;
+}
+
+h1 {
+	background: #fff url(/i/tinytomato.jpg) top left no-repeat;
+	padding: 20px 0 20px 68px;
+}
+
+a {
+	text-decoration: none;
+	color: #25d;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	color: #305a00;
+	font-size: 14pt;
+	margin: 15px 0 4px 0;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+div.note {
+	color: #444;
+	margin: 0 5px;
+}
+
+div#disclaimer {
+	font-size: 8pt;
+	padding: 8px;
+	border: 1px solid #ccc;
+	margin: 8px 15px;
+}
+
+div#disclaimer h3 {
+	font-size: 10pt;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 4px 0;
+}
+
+div.notice {
+	padding: 8px;
+	border: 1px solid #ccc;
+	margin: 8px 15px;
+	background: #dfd;
+}
+
+div.notice h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 4px 0;
+}
+
+form.new {
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+form.new input[type=text] {
+	color: #888;
+}
+
+form.new input[type=text]:focus {
+	color: #000;
+}
+
+form.new h3 {
+	font-size: 10pt;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 4px 0;
+	color: #305a00;
+}
+
+form.new select {
+	font-size: 10pt;
+}
+
+form.new h4 {
+	font-size: 8pt;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 6px 0 4px 0;
+}
+
+div#cloak { display: none; }
+
+#submitarea {
+	margin: 6px 0 0 0;
+}
+
+div.payload {
+	margin: 0 0 5px 0;
+}
+
+div.trigger {
+	margin: 0 0 3px 0;
+}
+
+div.section h3 {
+	font-size: 10pt;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 4px 0;
+	color: #305a00;
+}
