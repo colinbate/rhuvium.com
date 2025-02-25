@@ -2,16 +2,15 @@
 <html>
 <head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>rhuvium.com // Random Sub Generator</title>
-<link type="text/css" rel="stylesheet" href="/t/default.css" />
-<link type="text/css" rel="stylesheet" href="/t/subdesign.css" />
-<link rel="icon" type="image/png" href="/favicon.png">
-<?=$js?>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>rhuvium.com // Random Sub Generator</title>
+	<link type="text/css" rel="stylesheet" href="/t/default.css" />
+	<link type="text/css" rel="stylesheet" href="/t/subdesign.css" />
+	<link rel="icon" type="image/png" href="/favicon.png">
 
 </head>
-<body>
+<body data-app="subway">
 <div id="region">
 <div>
 <img src="/i/subway-logo.gif" alt="halifacts.com/colin/subway" />
@@ -44,38 +43,11 @@ more specifically the toppings available at the Subway restaurant in the IWK
 hospital in Halifax, Nova Scotia.
 </div>
 
-<form action="generate-sub" method="post" />
-
-<h2>For the fearless:</h2>
-<input type="submit" name="submit" value="Truly Random!" />
-
-
-<h2>Preferences:</h2>
-<p>
-Just check the boxes next to the items that you <strong>refuse to eat</strong> &mdash;
-if you won't eat more than you will eat, maybe this isn't the best tool for you.
-</p>
-
-<h3>Categories</h3>
-<?php listCategories(); ?>
-
-<h3>Toppings</h3>
-<?php listToppings(); ?>
-
-<h3>Sauces</h3>
-<?php listSauces(); ?>
-
-<br />
-<input type="submit" value="Make Me A Sub!" />
-<div class="note">
-OK this is now different than the top button! This actually takes into consideration the
-ommissions you require above. And it performs some basic sanity checks on the sub to at least make
-it editable. It is still possible to get a sub with 5 sauces say &mdash; but much less likely now.
-</div>
-</form>
+<div id="app"></div>
 	<div class="footer">
 	<a href="/"><strong>rhuvium</strong></a> | a fusion of software and design
 	</div>
 </div>
+<script type="module" src="src/main.ts"></script>
 </body>
 </html>
